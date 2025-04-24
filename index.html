@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeCrafters</title>
     <!-- ========== CUSTOM CSS ========== -->
-     <link rel="stylesheet" href="./assets/css/style.css">
-     <link rel="stylesheet" href="./assets/css/responsive.css">
-     <!-- ========== FONT AWESOME CDN ========== -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- ========== FONT AWESOME CDN ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- ========== NEUE MACHINA FONT CDN ========== -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neue+Machina:wght@400;700&display=swap">
 </head>
+
 <body>
-    
-     <!-- ========== NAVBAR ========== -->
+
+    <!-- ========== NAVBAR ========== -->
     <header>
-        <nav>
+        <nav class="navber">
             <h1>CodeCrafters</h1>
-            <ul>
+            <ul class="nav-item">
                 <li><a href="">Home</a></li>
                 <li><a href="">About us</a></li>
                 <li><a href="">Create</a></li>
@@ -24,8 +28,123 @@
                 <li><a href="">Plans</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
+            <i class="fa-solid fa-headset"></i>
         </nav>
     </header>
-    
+
+    <!-- ========== HERO SECTION ========== -->
+
+    <section class="HeroSection">
+
+    </section>
+    <section class="hero">
+        <div class="hero__content">
+            <h1>
+                We Help You Grow<br />
+                Your Business,<br />
+                Creatively.
+            </h1>
+            <p>
+                We don’t just build websites — we craft digital experiences that breathe life into your ideas. From
+                pixels to performance, we turn your vision into beautifully functional reality.
+            </p>
+            <div class="hero__button">
+                <button class="hero-icon1">
+                    <span class="arrow-icon">↗</span>
+                </button>
+                <button class="hero-icon2">
+                    <span class="star-icon">★</span>
+                </button>
+                <div class="btn-text">
+                    <strong>Appointment</strong>
+                    <small>Book Now</small>
+                </div>
+            </div>
+        </div>
+        <div class="hero__image">
+            <div class="arch">
+                <img src="./assets/images/Hero-image.webp" alt="Group of people" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HERO SVG SECTION ========== -->
+
+    <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+            preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 
+        58-18 88-18s
+        58 18 88 18 
+        58-18 88-18 
+        58 18 88 18
+        v44h-352z" />
+            </defs>
+            <g class="waves">
+                <use xlink:href="#gentle-wave" x="50" y="0" fill="#9e7aff" fill-opacity=".2" />
+                <use xlink:href="#gentle-wave" x="50" y="3" fill="#9e7aff" fill-opacity=".5" />
+                <use xlink:href="#gentle-wave" x="50" y="6" fill="#9e7aff" fill-opacity=".9" />
+            </g>
+        </svg>
+    </div>
+
+    <!-- ========== ABOUT US SECTION ========== -->
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p class="intro">
+            We're a team of passionate web creators who believe in turning ideas into interactive realities.
+            From elegant UI designs to powerful backend solutions, we craft websites that don’t just look good — they
+            work beautifully.
+        </p>
+
+        <section class="card-grid">
+            <!-- Users Card -->
+            <article class="card users">
+                <header>
+                    <h3>12.5k +</h3>
+                    <button aria-label="Arrow Button">→</button>
+                </header>
+                <p class="subtext">Active users around the world</p>
+                <footer>
+                    <ul class="avatars" aria-hidden="true">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p class="rating">★ 5 <span>stars</span></p>
+                </footer>
+            </article>
+
+            <!-- Journey Card -->
+            <article class="card journey">
+                <span class="round-badge">BE DIGITAL</span>
+                <h3>Digital Journeys<br>We’ve Built</h3>
+                <p>
+                    Since 2013, we’ve guided millions of global users on their digital assets journey!
+                </p>
+            </article>
+
+            <!-- Buttons Card -->
+            <article class="card actions">
+                <div class="btn-box">
+                    <button>OUR TEAM</button>
+                    <span>*</span>
+                </div>
+                <div class="btn-box">
+                    <span>★</span>
+                    <button>AWARDS</button>
+                </div>
+            </article>
+        </section>
+    </section>
+
+
+
+
+<!--========= CUSTOM JS LINK ==========-->
+<script src="./assets/js/script.js"></script>
 </body>
+
 </html>
